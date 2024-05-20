@@ -25,7 +25,7 @@ def cost(arr, total=None):
             total.append(arr[0])
         return cost(arr[1:], total)
     else:
-        return sum(total)
+        return sum(total[1:])
 
 
 print(cost(cables))
